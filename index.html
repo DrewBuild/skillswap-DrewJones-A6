@@ -1,50 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skill Swap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
 <header>
     <h1>Skill Swap</h1>
     <nav>
-
-        <p>Navigation Placeholder</p>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Browse Skills</a></li>
+            <li><a href="#">Offer Skills</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
     </nav>
-
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Browse Skills</a></li>
-        <li><a href="#">Offer Skills</a></li>
-        <li><a href="#">About</a></li>
-    </ul>
-</nav>
-
 </header>
 
 <main>
+
     <section class="hero">
         <h2>Exchange Skills. Build Community.</h2>
         <p>Find or offer skills in your community.</p>
     </section>
 
-
     <section class="skills">
-        <p>Skill listings will appear here.</p>
+        <div class="card">
+            <h3>Guitar Lessons</h3>
+            <p>$30/hour</p>
+            <button onclick="showInfo('Guitar Lessons')">More Info</button>
+        </div>
+
+        <div class="card">
+            <h3>Web Design Help</h3>
+            <p>$40/hour</p>
+            <button onclick="showInfo('Web Design Help')">More Info</button>
+        </div>
+
+        <div class="card">
+            <h3>Spanish Tutoring</h3>
+            <p>$25/hour</p>
+            <button onclick="showInfo('Spanish Tutoring')">More Info</button>
+        </div>
     </section>
-
-        <section class="skills">
-    <div class="card">
-        <h3>Guitar Lessons</h3>
-        <p>$30/hour</p>
-        <button onclick="showInfo('Guitar Lessons')">More Info</button>
-    </div>
-
-    <div class="card">
-        <h3>Web Design Help</h3>
-        <p>$40/hour</p>
-        <button onclick="showInfo('Web Design Help')">More Info</button>
-    </div>
-
-    <div class="card">
-        <h3>Spanish Tutoring</h3>
-        <p>$25/hour</p>
-        <button onclick="showInfo('Spanish Tutoring')">More Info</button>
-    </div>
-</section>
 
 </main>
 
@@ -52,3 +52,7 @@
     <p>© 2026 Skill Swap</p>
 </footer>
 
+<script src="script.js"></script>
+
+</body>
+</html>
