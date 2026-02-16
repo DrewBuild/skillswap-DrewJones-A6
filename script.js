@@ -1,3 +1,7 @@
+// Browser version of calculateTotalCost
+function calculateTotalCost(hourlyRate, hours) {
+  return hourlyRate * hours;
+}
 // Filter function (copied from tested Node version)
 function filterSkillsByCategory(skills, category) {
   if (category === 'All') {
@@ -46,4 +50,15 @@ buttons.forEach(button => {
     const filtered = filterSkillsByCategory(skills, category);
     renderSkills(filtered);
   });
+});
+
+// Cost Calculator Logic
+document.getElementById('calculate-btn').addEventListener('click', () => {
+  const rate = parseFloat(document.getElementById('rate').value);
+  const hours = parseFloat(document.getElementById('hours').value);
+
+  const total = calculateTotalCost(rate, hours);
+
+  document.getElementById('result').textContent = 
+    `Total Cost: $${total}`;
 });
